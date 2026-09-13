@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+#contact{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top left, #1a237e, #0a0f2c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 900px;
+  /* text-align: center; */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #6c7bff;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  /* color: #cbd5e1; */
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: #7f8cff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #2c3e91;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #6c7bff;
+  box-shadow: 0 0 10px rgba(108, 123, 255, 0.4);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 35px;
+  background: #6c7bff;
+  border: none;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #4f5eff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+  #contact {
+  width: 70%;
+  max-width: 768px;
+  /* text-align: center; */
+}
+}
